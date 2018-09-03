@@ -1,0 +1,66 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+}
+.wrapper {
+    width: 100%; height: 100%;
+    position: fixed;
+    overflow: hidden scroll;
+    perspective: 3px;
+    .shapes {
+        width: 100%;
+        height: 120%;
+        .shape {
+            stroke: red;
+            position: absolute;
+        }
+        .shape.triangle {
+            width: 120px; height: 120px;
+            left: -10%; top: 0%;
+            transform: translateZ(-1px);
+        }
+        .shape.triangle.small {
+            width: 60px; height: 60px;
+            left: 25%; top: 75%;
+        }
+        .shape.square {
+            width: 50px; height: 50px;
+            border: solid 1px #3bbba7;
+            left: 30%; top: 30%;
+        }
+        .shape.hexgen {
+            width: 60px; height: 60px;
+            left: 55%; top: 25%;
+            stroke-width: 0.3px;
+        }
+        .shape.wave {
+            width: 50px; height: 50px;
+            left: 5%; top: 60%;
+            stroke-width: 0.3px;
+        }
+        .shape.wave.small {
+            width: 40px; height: 40px;
+            left: 80%; top: 15%;
+        }
+        .shape.circle {
+            width: 50px; height: 50px;
+            border: solid 1px #3bbba7;
+            border-radius: 50%;
+            left: 60%; top: 75%;
+        }
+        .shape.square.big {
+            width: 80px; height: 80px;
+            border: solid 1px #3bbba7;
+            left: 100%; top: 60%;
+            transform: translateZ(-0.8px);
+        }
+    }
+}
