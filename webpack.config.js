@@ -8,6 +8,7 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'public')
     },
+    mode: 'development',
 
     module: {
         rules:[
@@ -76,7 +77,6 @@ module.exports = {
             $: 'jquery',
             jQuery: 'jquery'
         })
-
     ]
 
 };
