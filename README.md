@@ -1,5 +1,4 @@
-# practice_project_1
-Practice project for front-end ability
+# practice for scroll parallax effect
 
 ## Enviroment
 ```
